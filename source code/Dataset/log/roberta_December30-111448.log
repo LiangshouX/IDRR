@@ -1,0 +1,336 @@
+11:14 INFO     {'model_name': 'roberta', 'train_path': 'Dataset/data/train.txt', 'dev_path': 'Dataset/data/dev.txt', 'test_path': 'Dataset/data/test.txt', 'i2conn': '', 'conn2i': '', 'i2top': '', 'top2i': '', 'i2sec': '', 'sec2i': '', 'save_path_top': 'Dataset/saved_dict/roberta_top.ckpt', 'save_path_sec': 'Dataset/saved_dict/roberta_sec.ckpt', 'save_path_conn': 'Dataset/saved_dict/roberta_conn.ckpt', 'log': 'Dataset/log/roberta_December30-111448.log', 'device': device(type='cuda', index=0), 'require_improvement': 10000, 'n_top': 4, 'n_sec': 11, 'n_conn': 102, 'pad_size': 100, 'finetune_bert': True, 'num_epochs': 15, 'learning_rate': 1e-05, 'bert': 'roberta', 'batch_size': 32, 'bert_path': './pretrained/roberta-base/', 'hidden_size': 768, 'tokenizer': '', 'lambda1': 1.0, 'lambda2': 1.0, 'lambda3': 1.0, 'lambda4': 1.0, 'x_dim': 768, 'need_clc_loss': True, 'need_conn_rst': True, 'model_choose': 'bert_simple', 'show_time': True, 'num_gcn_layer': 2, 'label_num': 117, 'label_embedding_size': 100, 'attn_hidden_size': 768, 'enc_emb_dim': 384, 'dec_emb_dim': 384, 'enc_hidden_size': 768, 'dec_hidden_size': 768, 'enc_hid_dim': 768, 'dec_hid_dim': 768}
+11:14 INFO     Loading data...
+11:14 INFO     Time usage: 11.191832542419434
+11:15 INFO     Epoch [1/15]
+11:16 INFO     top-down:TOP: Iter:    100,  Train Loss:   7.0,  Train Acc: 56.25%,Val Loss:   6.9,  Val Acc: 55.71%, Val F1: 17.89% Time: 92.42296123504639 *
+11:16 INFO     top-down:SEC: Iter:    100,  Train Loss:   7.0,  Train Acc: 15.62%,Val Loss:   6.9,  Val Acc: 22.23%, Val F1:  3.31% Time: 92.42296123504639 *
+11:16 INFO     top-down:CONN: Iter:    100,  Train Loss:   7.0,  Train Acc:  9.38%,Val Loss:   6.9,  Val Acc: 14.71%, Val F1:  0.79% Time: 92.42296123504639 *
+11:16 INFO      
+11:16 INFO      
+11:18 INFO     top-down:TOP: Iter:    200,  Train Loss:   7.0,  Train Acc: 43.75%,Val Loss:   6.6,  Val Acc: 55.71%, Val F1: 17.89% Time: 187.97024035453796 *
+11:18 INFO     top-down:SEC: Iter:    200,  Train Loss:   7.0,  Train Acc: 18.75%,Val Loss:   6.6,  Val Acc: 23.18%, Val F1:  4.20% Time: 187.97024035453796 *
+11:18 INFO     top-down:CONN: Iter:    200,  Train Loss:   7.0,  Train Acc:  0.00%,Val Loss:   6.6,  Val Acc: 10.99%, Val F1:  0.64% Time: 187.97024035453796 *
+11:18 INFO      
+11:18 INFO      
+11:19 INFO     top-down:TOP: Iter:    300,  Train Loss:   6.0,  Train Acc: 46.88%,Val Loss:   6.1,  Val Acc: 57.82%, Val F1: 26.98% Time: 282.4389696121216 *
+11:19 INFO     top-down:SEC: Iter:    300,  Train Loss:   6.0,  Train Acc: 40.62%,Val Loss:   6.1,  Val Acc: 37.25%, Val F1: 14.52% Time: 282.4389696121216 *
+11:19 INFO     top-down:CONN: Iter:    300,  Train Loss:   6.0,  Train Acc: 25.00%,Val Loss:   6.1,  Val Acc: 19.61%, Val F1:  2.24% Time: 282.4389696121216 *
+11:19 INFO      
+11:19 INFO      
+11:21 INFO     top-down:TOP: Iter:    400,  Train Loss:   6.8,  Train Acc: 14.29%,Val Loss:   6.7,  Val Acc: 49.79%, Val F1: 32.68% Time: 377.4829652309418 *
+11:21 INFO     top-down:SEC: Iter:    400,  Train Loss:   6.8,  Train Acc: 14.29%,Val Loss:   6.7,  Val Acc: 28.50%, Val F1: 13.25% Time: 377.4829652309418 *
+11:21 INFO     top-down:CONN: Iter:    400,  Train Loss:   6.8,  Train Acc: 14.29%,Val Loss:   6.7,  Val Acc: 15.22%, Val F1:  2.67% Time: 377.4829652309418 *
+11:21 INFO      
+11:21 INFO      
+11:21 INFO     Train time usage: 377.48439049720764
+11:21 INFO     Epoch [2/15]
+11:23 INFO     top-down:TOP: Iter:    500,  Train Loss:   5.5,  Train Acc: 65.62%,Val Loss:   5.3,  Val Acc: 63.74%, Val F1: 46.03% Time: 94.9819016456604 *
+11:23 INFO     top-down:SEC: Iter:    500,  Train Loss:   5.5,  Train Acc: 34.38%,Val Loss:   5.3,  Val Acc: 48.76%, Val F1: 25.31% Time: 94.9819016456604 *
+11:23 INFO     top-down:CONN: Iter:    500,  Train Loss:   5.5,  Train Acc: 31.25%,Val Loss:   5.3,  Val Acc: 25.11%, Val F1:  3.50% Time: 94.9819016456604 *
+11:23 INFO      
+11:23 INFO      
+11:24 INFO     top-down:TOP: Iter:    600,  Train Loss:   5.2,  Train Acc: 71.88%,Val Loss:   5.1,  Val Acc: 64.84%, Val F1: 53.98% Time: 190.43138766288757 *
+11:24 INFO     top-down:SEC: Iter:    600,  Train Loss:   5.2,  Train Acc: 50.00%,Val Loss:   5.1,  Val Acc: 53.13%, Val F1: 29.34% Time: 190.43138766288757 *
+11:24 INFO     top-down:CONN: Iter:    600,  Train Loss:   5.2,  Train Acc: 28.12%,Val Loss:   5.1,  Val Acc: 28.40%, Val F1:  4.78% Time: 190.43138766288757 *
+11:24 INFO      
+11:24 INFO      
+11:26 INFO     top-down:TOP: Iter:    700,  Train Loss:   5.0,  Train Acc: 56.25%,Val Loss:   5.1,  Val Acc: 66.02%, Val F1: 52.43% Time: 282.0488398075104 
+11:26 INFO     top-down:SEC: Iter:    700,  Train Loss:   5.0,  Train Acc: 59.38%,Val Loss:   5.1,  Val Acc: 51.33%, Val F1: 26.81% Time: 282.0488398075104 
+11:26 INFO     top-down:CONN: Iter:    700,  Train Loss:   5.0,  Train Acc: 28.12%,Val Loss:   5.1,  Val Acc: 29.59%, Val F1:  6.60% Time: 282.0488398075104 
+11:26 INFO      
+11:26 INFO      
+11:27 INFO     top-down:TOP: Iter:    800,  Train Loss:   5.7,  Train Acc: 57.14%,Val Loss:   5.3,  Val Acc: 63.74%, Val F1: 53.27% Time: 373.2567448616028 
+11:27 INFO     top-down:SEC: Iter:    800,  Train Loss:   5.7,  Train Acc: 28.57%,Val Loss:   5.3,  Val Acc: 49.96%, Val F1: 26.61% Time: 373.2567448616028 
+11:27 INFO     top-down:CONN: Iter:    800,  Train Loss:   5.7,  Train Acc: 28.57%,Val Loss:   5.3,  Val Acc: 27.98%, Val F1:  6.20% Time: 373.2567448616028 
+11:27 INFO      
+11:27 INFO      
+11:27 INFO     Train time usage: 373.25795435905457
+11:27 INFO     Epoch [3/15]
+11:29 INFO     top-down:TOP: Iter:    900,  Train Loss:   4.2,  Train Acc: 71.88%,Val Loss:   5.0,  Val Acc: 68.30%, Val F1: 58.80% Time: 96.20339822769165 *
+11:29 INFO     top-down:SEC: Iter:    900,  Train Loss:   4.2,  Train Acc: 50.00%,Val Loss:   5.0,  Val Acc: 54.94%, Val F1: 32.01% Time: 96.20339822769165 *
+11:29 INFO     top-down:CONN: Iter:    900,  Train Loss:   4.2,  Train Acc: 37.50%,Val Loss:   5.0,  Val Acc: 32.12%, Val F1:  7.18% Time: 96.20339822769165 *
+11:29 INFO      
+11:29 INFO      
+11:30 INFO     top-down:TOP: Iter:   1000,  Train Loss:   4.2,  Train Acc: 81.25%,Val Loss:   4.9,  Val Acc: 67.46%, Val F1: 59.06% Time: 192.1554398536682 *
+11:30 INFO     top-down:SEC: Iter:   1000,  Train Loss:   4.2,  Train Acc: 71.88%,Val Loss:   4.9,  Val Acc: 55.97%, Val F1: 33.45% Time: 192.1554398536682 *
+11:30 INFO     top-down:CONN: Iter:   1000,  Train Loss:   4.2,  Train Acc: 37.50%,Val Loss:   4.9,  Val Acc: 32.04%, Val F1:  7.83% Time: 192.1554398536682 *
+11:30 INFO      
+11:30 INFO      
+11:32 INFO     top-down:TOP: Iter:   1100,  Train Loss:   4.3,  Train Acc: 71.88%,Val Loss:   4.9,  Val Acc: 67.62%, Val F1: 58.96% Time: 288.1616575717926 *
+11:32 INFO     top-down:SEC: Iter:   1100,  Train Loss:   4.3,  Train Acc: 62.50%,Val Loss:   4.9,  Val Acc: 55.54%, Val F1: 34.24% Time: 288.1616575717926 *
+11:32 INFO     top-down:CONN: Iter:   1100,  Train Loss:   4.3,  Train Acc: 37.50%,Val Loss:   4.9,  Val Acc: 33.31%, Val F1:  8.05% Time: 288.1616575717926 *
+11:32 INFO      
+11:32 INFO      
+11:34 INFO     top-down:TOP: Iter:   1200,  Train Loss:   4.9,  Train Acc: 57.14%,Val Loss:   5.1,  Val Acc: 67.12%, Val F1: 58.00% Time: 379.86648297309875 
+11:34 INFO     top-down:SEC: Iter:   1200,  Train Loss:   4.9,  Train Acc: 28.57%,Val Loss:   5.1,  Val Acc: 52.70%, Val F1: 33.40% Time: 379.86648297309875 
+11:34 INFO     top-down:CONN: Iter:   1200,  Train Loss:   4.9,  Train Acc: 28.57%,Val Loss:   5.1,  Val Acc: 30.09%, Val F1:  7.59% Time: 379.86648297309875 
+11:34 INFO      
+11:34 INFO      
+11:34 INFO     Train time usage: 379.86773228645325
+11:34 INFO     Epoch [4/15]
+11:35 INFO     top-down:TOP: Iter:   1300,  Train Loss:   3.7,  Train Acc: 75.00%,Val Loss:   5.0,  Val Acc: 69.48%, Val F1: 59.69% Time: 91.57612180709839 
+11:35 INFO     top-down:SEC: Iter:   1300,  Train Loss:   3.7,  Train Acc: 46.88%,Val Loss:   5.0,  Val Acc: 54.42%, Val F1: 33.49% Time: 91.57612180709839 
+11:35 INFO     top-down:CONN: Iter:   1300,  Train Loss:   3.7,  Train Acc: 46.88%,Val Loss:   5.0,  Val Acc: 32.38%, Val F1:  7.82% Time: 91.57612180709839 
+11:35 INFO      
+11:35 INFO      
+11:37 INFO     top-down:TOP: Iter:   1400,  Train Loss:   3.6,  Train Acc: 81.25%,Val Loss:   5.0,  Val Acc: 68.55%, Val F1: 59.28% Time: 186.31747317314148 *
+11:37 INFO     top-down:SEC: Iter:   1400,  Train Loss:   3.6,  Train Acc: 68.75%,Val Loss:   5.0,  Val Acc: 55.11%, Val F1: 34.03% Time: 186.31747317314148 *
+11:37 INFO     top-down:CONN: Iter:   1400,  Train Loss:   3.6,  Train Acc: 43.75%,Val Loss:   5.0,  Val Acc: 32.97%, Val F1:  8.17% Time: 186.31747317314148 *
+11:37 INFO      
+11:37 INFO      
+11:38 INFO     top-down:TOP: Iter:   1500,  Train Loss:   3.4,  Train Acc: 81.25%,Val Loss:   5.0,  Val Acc: 67.71%, Val F1: 58.45% Time: 278.00476241111755 
+11:38 INFO     top-down:SEC: Iter:   1500,  Train Loss:   3.4,  Train Acc: 65.62%,Val Loss:   5.0,  Val Acc: 54.51%, Val F1: 32.64% Time: 278.00476241111755 
+11:38 INFO     top-down:CONN: Iter:   1500,  Train Loss:   3.4,  Train Acc: 50.00%,Val Loss:   5.0,  Val Acc: 32.88%, Val F1:  8.93% Time: 278.00476241111755 
+11:38 INFO      
+11:38 INFO      
+11:40 INFO     top-down:TOP: Iter:   1600,  Train Loss:   4.4,  Train Acc: 71.43%,Val Loss:   5.4,  Val Acc: 66.95%, Val F1: 57.23% Time: 369.14197421073914 
+11:40 INFO     top-down:SEC: Iter:   1600,  Train Loss:   4.4,  Train Acc: 28.57%,Val Loss:   5.4,  Val Acc: 51.24%, Val F1: 32.73% Time: 369.14197421073914 
+11:40 INFO     top-down:CONN: Iter:   1600,  Train Loss:   4.4,  Train Acc: 28.57%,Val Loss:   5.4,  Val Acc: 29.75%, Val F1:  8.15% Time: 369.14197421073914 
+11:40 INFO      
+11:40 INFO      
+11:40 INFO     Train time usage: 369.14378905296326
+11:40 INFO     Epoch [5/15]
+11:41 INFO     top-down:TOP: Iter:   1700,  Train Loss:   3.1,  Train Acc: 90.62%,Val Loss:   5.2,  Val Acc: 68.55%, Val F1: 59.22% Time: 91.8546290397644 
+11:41 INFO     top-down:SEC: Iter:   1700,  Train Loss:   3.1,  Train Acc: 62.50%,Val Loss:   5.2,  Val Acc: 52.79%, Val F1: 33.47% Time: 91.8546290397644 
+11:41 INFO     top-down:CONN: Iter:   1700,  Train Loss:   3.1,  Train Acc: 43.75%,Val Loss:   5.2,  Val Acc: 32.04%, Val F1:  8.07% Time: 91.8546290397644 
+11:41 INFO      
+11:41 INFO      
+11:43 INFO     top-down:TOP: Iter:   1800,  Train Loss:   3.2,  Train Acc: 87.50%,Val Loss:   5.1,  Val Acc: 67.96%, Val F1: 60.43% Time: 187.65837860107422 *
+11:43 INFO     top-down:SEC: Iter:   1800,  Train Loss:   3.2,  Train Acc: 75.00%,Val Loss:   5.1,  Val Acc: 55.36%, Val F1: 34.42% Time: 187.65837860107422 *
+11:43 INFO     top-down:CONN: Iter:   1800,  Train Loss:   3.2,  Train Acc: 46.88%,Val Loss:   5.1,  Val Acc: 32.63%, Val F1:  8.32% Time: 187.65837860107422 *
+11:43 INFO      
+11:43 INFO      
+11:44 INFO     top-down:TOP: Iter:   1900,  Train Loss:   3.2,  Train Acc: 81.25%,Val Loss:   5.2,  Val Acc: 66.69%, Val F1: 58.68% Time: 280.06367659568787 
+11:44 INFO     top-down:SEC: Iter:   1900,  Train Loss:   3.2,  Train Acc: 75.00%,Val Loss:   5.2,  Val Acc: 53.82%, Val F1: 32.48% Time: 280.06367659568787 
+11:44 INFO     top-down:CONN: Iter:   1900,  Train Loss:   3.2,  Train Acc: 46.88%,Val Loss:   5.2,  Val Acc: 32.38%, Val F1:  8.65% Time: 280.06367659568787 
+11:44 INFO      
+11:44 INFO      
+11:46 INFO     top-down:TOP: Iter:   2000,  Train Loss:   3.3,  Train Acc: 100.00%,Val Loss:   5.7,  Val Acc: 68.05%, Val F1: 57.75% Time: 371.50555443763733 
+11:46 INFO     top-down:SEC: Iter:   2000,  Train Loss:   3.3,  Train Acc: 85.71%,Val Loss:   5.7,  Val Acc: 51.33%, Val F1: 32.49% Time: 371.50555443763733 
+11:46 INFO     top-down:CONN: Iter:   2000,  Train Loss:   3.3,  Train Acc: 42.86%,Val Loss:   5.7,  Val Acc: 28.99%, Val F1:  8.58% Time: 371.50555443763733 
+11:46 INFO      
+11:46 INFO      
+11:46 INFO     Train time usage: 371.5067629814148
+11:46 INFO     Epoch [6/15]
+11:47 INFO     top-down:TOP: Iter:   2100,  Train Loss:   2.9,  Train Acc: 87.50%,Val Loss:   5.3,  Val Acc: 68.89%, Val F1: 59.03% Time: 92.17290353775024 
+11:47 INFO     top-down:SEC: Iter:   2100,  Train Loss:   2.9,  Train Acc: 62.50%,Val Loss:   5.3,  Val Acc: 52.36%, Val F1: 32.97% Time: 92.17290353775024 
+11:47 INFO     top-down:CONN: Iter:   2100,  Train Loss:   2.9,  Train Acc: 46.88%,Val Loss:   5.3,  Val Acc: 31.36%, Val F1:  8.22% Time: 92.17290353775024 
+11:47 INFO      
+11:47 INFO      
+11:49 INFO     top-down:TOP: Iter:   2200,  Train Loss:   3.0,  Train Acc: 90.62%,Val Loss:   5.3,  Val Acc: 68.22%, Val F1: 60.27% Time: 184.49541878700256 
+11:49 INFO     top-down:SEC: Iter:   2200,  Train Loss:   3.0,  Train Acc: 71.88%,Val Loss:   5.3,  Val Acc: 54.08%, Val F1: 32.96% Time: 184.49541878700256 
+11:49 INFO     top-down:CONN: Iter:   2200,  Train Loss:   3.0,  Train Acc: 53.12%,Val Loss:   5.3,  Val Acc: 31.78%, Val F1:  8.40% Time: 184.49541878700256 
+11:49 INFO      
+11:49 INFO      
+11:50 INFO     top-down:TOP: Iter:   2300,  Train Loss:   3.0,  Train Acc: 81.25%,Val Loss:   5.4,  Val Acc: 66.95%, Val F1: 60.49% Time: 276.9103636741638 
+11:50 INFO     top-down:SEC: Iter:   2300,  Train Loss:   3.0,  Train Acc: 62.50%,Val Loss:   5.4,  Val Acc: 53.13%, Val F1: 33.57% Time: 276.9103636741638 
+11:50 INFO     top-down:CONN: Iter:   2300,  Train Loss:   3.0,  Train Acc: 56.25%,Val Loss:   5.4,  Val Acc: 31.28%, Val F1:  8.58% Time: 276.9103636741638 
+11:50 INFO      
+11:50 INFO      
+11:52 INFO     top-down:TOP: Iter:   2400,  Train Loss:   3.3,  Train Acc: 85.71%,Val Loss:   5.8,  Val Acc: 67.88%, Val F1: 58.25% Time: 369.0771679878235 
+11:52 INFO     top-down:SEC: Iter:   2400,  Train Loss:   3.3,  Train Acc: 57.14%,Val Loss:   5.8,  Val Acc: 52.27%, Val F1: 32.70% Time: 369.0771679878235 
+11:52 INFO     top-down:CONN: Iter:   2400,  Train Loss:   3.3,  Train Acc: 42.86%,Val Loss:   5.8,  Val Acc: 29.84%, Val F1:  8.72% Time: 369.0771679878235 
+11:52 INFO      
+11:52 INFO      
+11:52 INFO     Train time usage: 369.0783965587616
+11:52 INFO     Epoch [7/15]
+11:54 INFO     top-down:TOP: Iter:   2500,  Train Loss:   2.6,  Train Acc: 90.62%,Val Loss:   5.5,  Val Acc: 68.81%, Val F1: 58.45% Time: 93.00031638145447 
+11:54 INFO     top-down:SEC: Iter:   2500,  Train Loss:   2.6,  Train Acc: 68.75%,Val Loss:   5.5,  Val Acc: 53.82%, Val F1: 33.70% Time: 93.00031638145447 
+11:54 INFO     top-down:CONN: Iter:   2500,  Train Loss:   2.6,  Train Acc: 50.00%,Val Loss:   5.5,  Val Acc: 32.88%, Val F1:  9.00% Time: 93.00031638145447 
+11:54 INFO      
+11:54 INFO      
+11:55 INFO     top-down:TOP: Iter:   2600,  Train Loss:   2.8,  Train Acc: 93.75%,Val Loss:   5.5,  Val Acc: 67.79%, Val F1: 61.03% Time: 190.04105687141418 *
+11:55 INFO     top-down:SEC: Iter:   2600,  Train Loss:   2.8,  Train Acc: 78.12%,Val Loss:   5.5,  Val Acc: 55.02%, Val F1: 34.38% Time: 190.04105687141418 *
+11:55 INFO     top-down:CONN: Iter:   2600,  Train Loss:   2.8,  Train Acc: 46.88%,Val Loss:   5.5,  Val Acc: 33.31%, Val F1:  8.98% Time: 190.04105687141418 *
+11:55 INFO      
+11:55 INFO      
+11:57 INFO     top-down:TOP: Iter:   2700,  Train Loss:   2.8,  Train Acc: 87.50%,Val Loss:   5.6,  Val Acc: 67.71%, Val F1: 61.30% Time: 282.5076825618744 
+11:57 INFO     top-down:SEC: Iter:   2700,  Train Loss:   2.8,  Train Acc: 68.75%,Val Loss:   5.6,  Val Acc: 53.48%, Val F1: 33.63% Time: 282.5076825618744 
+11:57 INFO     top-down:CONN: Iter:   2700,  Train Loss:   2.8,  Train Acc: 50.00%,Val Loss:   5.6,  Val Acc: 31.36%, Val F1:  8.57% Time: 282.5076825618744 
+11:57 INFO      
+11:57 INFO      
+11:58 INFO     top-down:TOP: Iter:   2800,  Train Loss:   2.9,  Train Acc: 85.71%,Val Loss:   5.8,  Val Acc: 69.06%, Val F1: 60.78% Time: 374.39947533607483 
+11:58 INFO     top-down:SEC: Iter:   2800,  Train Loss:   2.9,  Train Acc: 85.71%,Val Loss:   5.8,  Val Acc: 53.82%, Val F1: 34.36% Time: 374.39947533607483 
+11:58 INFO     top-down:CONN: Iter:   2800,  Train Loss:   2.9,  Train Acc: 57.14%,Val Loss:   5.8,  Val Acc: 29.84%, Val F1:  9.04% Time: 374.39947533607483 
+11:58 INFO      
+11:58 INFO      
+11:58 INFO     Train time usage: 374.4006726741791
+11:58 INFO     Epoch [8/15]
+12:00 INFO     top-down:TOP: Iter:   2900,  Train Loss:   2.7,  Train Acc: 90.62%,Val Loss:   5.7,  Val Acc: 70.16%, Val F1: 60.38% Time: 92.50362992286682 
+12:00 INFO     top-down:SEC: Iter:   2900,  Train Loss:   2.7,  Train Acc: 65.62%,Val Loss:   5.7,  Val Acc: 53.82%, Val F1: 33.19% Time: 92.50362992286682 
+12:00 INFO     top-down:CONN: Iter:   2900,  Train Loss:   2.7,  Train Acc: 46.88%,Val Loss:   5.7,  Val Acc: 32.29%, Val F1:  9.05% Time: 92.50362992286682 
+12:00 INFO      
+12:00 INFO      
+12:01 INFO     top-down:TOP: Iter:   3000,  Train Loss:   2.6,  Train Acc: 93.75%,Val Loss:   5.6,  Val Acc: 69.15%, Val F1: 60.35% Time: 184.9566969871521 
+12:01 INFO     top-down:SEC: Iter:   3000,  Train Loss:   2.6,  Train Acc: 78.12%,Val Loss:   5.6,  Val Acc: 54.08%, Val F1: 33.67% Time: 184.9566969871521 
+12:01 INFO     top-down:CONN: Iter:   3000,  Train Loss:   2.6,  Train Acc: 53.12%,Val Loss:   5.6,  Val Acc: 32.97%, Val F1:  9.05% Time: 184.9566969871521 
+12:01 INFO      
+12:01 INFO      
+12:03 INFO     top-down:TOP: Iter:   3100,  Train Loss:   2.6,  Train Acc: 90.62%,Val Loss:   5.7,  Val Acc: 69.32%, Val F1: 62.24% Time: 280.74658036231995 *
+12:03 INFO     top-down:SEC: Iter:   3100,  Train Loss:   2.6,  Train Acc: 78.12%,Val Loss:   5.7,  Val Acc: 53.65%, Val F1: 34.00% Time: 280.74658036231995 *
+12:03 INFO     top-down:CONN: Iter:   3100,  Train Loss:   2.6,  Train Acc: 50.00%,Val Loss:   5.7,  Val Acc: 32.21%, Val F1:  9.02% Time: 280.74658036231995 *
+12:03 INFO      
+12:03 INFO      
+12:04 INFO     top-down:TOP: Iter:   3200,  Train Loss:   3.0,  Train Acc: 100.00%,Val Loss:   5.8,  Val Acc: 69.57%, Val F1: 61.02% Time: 372.5400059223175 
+12:04 INFO     top-down:SEC: Iter:   3200,  Train Loss:   3.0,  Train Acc: 42.86%,Val Loss:   5.8,  Val Acc: 53.82%, Val F1: 34.01% Time: 372.5400059223175 
+12:04 INFO     top-down:CONN: Iter:   3200,  Train Loss:   3.0,  Train Acc: 42.86%,Val Loss:   5.8,  Val Acc: 30.85%, Val F1:  9.15% Time: 372.5400059223175 
+12:04 INFO      
+12:04 INFO      
+12:04 INFO     Train time usage: 372.5411992073059
+12:04 INFO     Epoch [9/15]
+12:06 INFO     top-down:TOP: Iter:   3300,  Train Loss:   2.4,  Train Acc: 90.62%,Val Loss:   5.9,  Val Acc: 69.48%, Val F1: 58.79% Time: 92.59323835372925 
+12:06 INFO     top-down:SEC: Iter:   3300,  Train Loss:   2.4,  Train Acc: 65.62%,Val Loss:   5.9,  Val Acc: 52.53%, Val F1: 33.13% Time: 92.59323835372925 
+12:06 INFO     top-down:CONN: Iter:   3300,  Train Loss:   2.4,  Train Acc: 50.00%,Val Loss:   5.9,  Val Acc: 31.78%, Val F1:  9.26% Time: 92.59323835372925 
+12:06 INFO      
+12:06 INFO      
+12:08 INFO     top-down:TOP: Iter:   3400,  Train Loss:   2.5,  Train Acc: 100.00%,Val Loss:   5.7,  Val Acc: 68.64%, Val F1: 60.43% Time: 185.2758011817932 
+12:08 INFO     top-down:SEC: Iter:   3400,  Train Loss:   2.5,  Train Acc: 78.12%,Val Loss:   5.7,  Val Acc: 54.51%, Val F1: 33.79% Time: 185.2758011817932 
+12:08 INFO     top-down:CONN: Iter:   3400,  Train Loss:   2.5,  Train Acc: 46.88%,Val Loss:   5.7,  Val Acc: 32.54%, Val F1:  9.45% Time: 185.2758011817932 
+12:08 INFO      
+12:08 INFO      
+12:09 INFO     top-down:TOP: Iter:   3500,  Train Loss:   2.4,  Train Acc: 87.50%,Val Loss:   5.9,  Val Acc: 67.88%, Val F1: 60.02% Time: 278.0067386627197 
+12:09 INFO     top-down:SEC: Iter:   3500,  Train Loss:   2.4,  Train Acc: 71.88%,Val Loss:   5.9,  Val Acc: 53.13%, Val F1: 33.83% Time: 278.0067386627197 
+12:09 INFO     top-down:CONN: Iter:   3500,  Train Loss:   2.4,  Train Acc: 59.38%,Val Loss:   5.9,  Val Acc: 31.53%, Val F1:  8.68% Time: 278.0067386627197 
+12:09 INFO      
+12:09 INFO      
+12:11 INFO     top-down:TOP: Iter:   3600,  Train Loss:   3.1,  Train Acc: 100.00%,Val Loss:   6.0,  Val Acc: 68.72%, Val F1: 60.03% Time: 370.1335828304291 
+12:11 INFO     top-down:SEC: Iter:   3600,  Train Loss:   3.1,  Train Acc: 100.00%,Val Loss:   6.0,  Val Acc: 53.99%, Val F1: 34.61% Time: 370.1335828304291 
+12:11 INFO     top-down:CONN: Iter:   3600,  Train Loss:   3.1,  Train Acc: 28.57%,Val Loss:   6.0,  Val Acc: 30.52%, Val F1:  9.08% Time: 370.1335828304291 
+12:11 INFO      
+12:11 INFO      
+12:11 INFO     Train time usage: 370.1347887516022
+12:11 INFO     Epoch [10/15]
+12:12 INFO     top-down:TOP: Iter:   3700,  Train Loss:   2.2,  Train Acc: 100.00%,Val Loss:   6.0,  Val Acc: 69.06%, Val F1: 58.91% Time: 92.72964072227478 
+12:12 INFO     top-down:SEC: Iter:   3700,  Train Loss:   2.2,  Train Acc: 75.00%,Val Loss:   6.0,  Val Acc: 52.19%, Val F1: 33.15% Time: 92.72964072227478 
+12:12 INFO     top-down:CONN: Iter:   3700,  Train Loss:   2.2,  Train Acc: 53.12%,Val Loss:   6.0,  Val Acc: 31.87%, Val F1:  9.67% Time: 92.72964072227478 
+12:12 INFO      
+12:12 INFO      
+12:14 INFO     top-down:TOP: Iter:   3800,  Train Loss:   2.5,  Train Acc: 93.75%,Val Loss:   5.8,  Val Acc: 68.55%, Val F1: 60.59% Time: 185.48003602027893 
+12:14 INFO     top-down:SEC: Iter:   3800,  Train Loss:   2.5,  Train Acc: 78.12%,Val Loss:   5.8,  Val Acc: 53.65%, Val F1: 34.43% Time: 185.48003602027893 
+12:14 INFO     top-down:CONN: Iter:   3800,  Train Loss:   2.5,  Train Acc: 50.00%,Val Loss:   5.8,  Val Acc: 32.54%, Val F1:  9.38% Time: 185.48003602027893 
+12:14 INFO      
+12:14 INFO      
+12:15 INFO     top-down:TOP: Iter:   3900,  Train Loss:   2.3,  Train Acc: 96.88%,Val Loss:   5.9,  Val Acc: 67.79%, Val F1: 60.65% Time: 278.19285321235657 
+12:15 INFO     top-down:SEC: Iter:   3900,  Train Loss:   2.3,  Train Acc: 81.25%,Val Loss:   5.9,  Val Acc: 53.05%, Val F1: 34.39% Time: 278.19285321235657 
+12:15 INFO     top-down:CONN: Iter:   3900,  Train Loss:   2.3,  Train Acc: 53.12%,Val Loss:   5.9,  Val Acc: 31.61%, Val F1:  8.85% Time: 278.19285321235657 
+12:15 INFO      
+12:15 INFO      
+12:17 INFO     top-down:TOP: Iter:   4000,  Train Loss:   2.8,  Train Acc: 71.43%,Val Loss:   5.9,  Val Acc: 68.13%, Val F1: 59.66% Time: 370.2929427623749 
+12:17 INFO     top-down:SEC: Iter:   4000,  Train Loss:   2.8,  Train Acc: 57.14%,Val Loss:   5.9,  Val Acc: 53.39%, Val F1: 33.72% Time: 370.2929427623749 
+12:17 INFO     top-down:CONN: Iter:   4000,  Train Loss:   2.8,  Train Acc: 57.14%,Val Loss:   5.9,  Val Acc: 30.09%, Val F1:  8.80% Time: 370.2929427623749 
+12:17 INFO      
+12:17 INFO      
+12:17 INFO     Train time usage: 370.29418754577637
+12:17 INFO     Epoch [11/15]
+12:18 INFO     top-down:TOP: Iter:   4100,  Train Loss:   2.3,  Train Acc: 96.88%,Val Loss:   6.2,  Val Acc: 68.72%, Val F1: 58.29% Time: 92.73661303520203 
+12:18 INFO     top-down:SEC: Iter:   4100,  Train Loss:   2.3,  Train Acc: 75.00%,Val Loss:   6.2,  Val Acc: 51.07%, Val F1: 32.52% Time: 92.73661303520203 
+12:18 INFO     top-down:CONN: Iter:   4100,  Train Loss:   2.3,  Train Acc: 53.12%,Val Loss:   6.2,  Val Acc: 30.18%, Val F1:  8.95% Time: 92.73661303520203 
+12:18 INFO      
+12:18 INFO      
+12:20 INFO     top-down:TOP: Iter:   4200,  Train Loss:   2.5,  Train Acc: 96.88%,Val Loss:   6.0,  Val Acc: 68.72%, Val F1: 58.46% Time: 185.46925616264343 
+12:20 INFO     top-down:SEC: Iter:   4200,  Train Loss:   2.5,  Train Acc: 78.12%,Val Loss:   6.0,  Val Acc: 53.05%, Val F1: 32.72% Time: 185.46925616264343 
+12:20 INFO     top-down:CONN: Iter:   4200,  Train Loss:   2.5,  Train Acc: 50.00%,Val Loss:   6.0,  Val Acc: 31.45%, Val F1:  9.52% Time: 185.46925616264343 
+12:20 INFO      
+12:20 INFO      
+12:21 INFO     top-down:TOP: Iter:   4300,  Train Loss:   2.1,  Train Acc: 93.75%,Val Loss:   6.0,  Val Acc: 68.22%, Val F1: 60.58% Time: 278.159175157547 
+12:21 INFO     top-down:SEC: Iter:   4300,  Train Loss:   2.1,  Train Acc: 84.38%,Val Loss:   6.0,  Val Acc: 53.05%, Val F1: 33.86% Time: 278.159175157547 
+12:21 INFO     top-down:CONN: Iter:   4300,  Train Loss:   2.1,  Train Acc: 59.38%,Val Loss:   6.0,  Val Acc: 31.19%, Val F1:  9.03% Time: 278.159175157547 
+12:21 INFO      
+12:21 INFO      
+12:23 INFO     top-down:TOP: Iter:   4400,  Train Loss:   2.9,  Train Acc: 100.00%,Val Loss:   6.0,  Val Acc: 69.23%, Val F1: 60.70% Time: 370.23825764656067 
+12:23 INFO     top-down:SEC: Iter:   4400,  Train Loss:   2.9,  Train Acc: 85.71%,Val Loss:   6.0,  Val Acc: 55.11%, Val F1: 34.62% Time: 370.23825764656067 
+12:23 INFO     top-down:CONN: Iter:   4400,  Train Loss:   2.9,  Train Acc: 14.29%,Val Loss:   6.0,  Val Acc: 30.52%, Val F1:  8.82% Time: 370.23825764656067 
+12:23 INFO      
+12:23 INFO      
+12:23 INFO     Train time usage: 370.23947739601135
+12:23 INFO     Epoch [12/15]
+12:25 INFO     top-down:TOP: Iter:   4500,  Train Loss:   2.1,  Train Acc: 100.00%,Val Loss:   6.2,  Val Acc: 69.40%, Val F1: 59.27% Time: 92.73496627807617 
+12:25 INFO     top-down:SEC: Iter:   4500,  Train Loss:   2.1,  Train Acc: 81.25%,Val Loss:   6.2,  Val Acc: 52.10%, Val F1: 32.68% Time: 92.73496627807617 
+12:25 INFO     top-down:CONN: Iter:   4500,  Train Loss:   2.1,  Train Acc: 46.88%,Val Loss:   6.2,  Val Acc: 30.09%, Val F1:  9.09% Time: 92.73496627807617 
+12:25 INFO      
+12:25 INFO      
+12:26 INFO     top-down:TOP: Iter:   4600,  Train Loss:   2.2,  Train Acc: 100.00%,Val Loss:   6.0,  Val Acc: 68.89%, Val F1: 59.60% Time: 185.42833137512207 
+12:26 INFO     top-down:SEC: Iter:   4600,  Train Loss:   2.2,  Train Acc: 87.50%,Val Loss:   6.0,  Val Acc: 53.65%, Val F1: 32.49% Time: 185.42833137512207 
+12:26 INFO     top-down:CONN: Iter:   4600,  Train Loss:   2.2,  Train Acc: 53.12%,Val Loss:   6.0,  Val Acc: 32.12%, Val F1:  9.63% Time: 185.42833137512207 
+12:26 INFO      
+12:26 INFO      
+12:28 INFO     top-down:TOP: Iter:   4700,  Train Loss:   2.4,  Train Acc: 90.62%,Val Loss:   6.0,  Val Acc: 67.96%, Val F1: 60.73% Time: 278.14089846611023 
+12:28 INFO     top-down:SEC: Iter:   4700,  Train Loss:   2.4,  Train Acc: 75.00%,Val Loss:   6.0,  Val Acc: 53.99%, Val F1: 34.49% Time: 278.14089846611023 
+12:28 INFO     top-down:CONN: Iter:   4700,  Train Loss:   2.4,  Train Acc: 59.38%,Val Loss:   6.0,  Val Acc: 32.12%, Val F1:  9.41% Time: 278.14089846611023 
+12:28 INFO      
+12:28 INFO      
+12:29 INFO     top-down:TOP: Iter:   4800,  Train Loss:   2.3,  Train Acc: 100.00%,Val Loss:   6.1,  Val Acc: 68.55%, Val F1: 60.65% Time: 370.232319355011 
+12:29 INFO     top-down:SEC: Iter:   4800,  Train Loss:   2.3,  Train Acc: 100.00%,Val Loss:   6.1,  Val Acc: 53.65%, Val F1: 34.22% Time: 370.232319355011 
+12:29 INFO     top-down:CONN: Iter:   4800,  Train Loss:   2.3,  Train Acc: 42.86%,Val Loss:   6.1,  Val Acc: 30.09%, Val F1:  8.95% Time: 370.232319355011 
+12:29 INFO      
+12:29 INFO      
+12:29 INFO     Train time usage: 370.2335116863251
+12:29 INFO     Epoch [13/15]
+12:31 INFO     top-down:TOP: Iter:   4900,  Train Loss:   2.0,  Train Acc: 93.75%,Val Loss:   6.3,  Val Acc: 69.15%, Val F1: 59.60% Time: 92.73781132698059 
+12:31 INFO     top-down:SEC: Iter:   4900,  Train Loss:   2.0,  Train Acc: 78.12%,Val Loss:   6.3,  Val Acc: 52.79%, Val F1: 33.35% Time: 92.73781132698059 
+12:31 INFO     top-down:CONN: Iter:   4900,  Train Loss:   2.0,  Train Acc: 56.25%,Val Loss:   6.3,  Val Acc: 30.01%, Val F1:  9.14% Time: 92.73781132698059 
+12:31 INFO      
+12:31 INFO      
+12:32 INFO     top-down:TOP: Iter:   5000,  Train Loss:   2.0,  Train Acc: 100.00%,Val Loss:   6.2,  Val Acc: 69.40%, Val F1: 60.91% Time: 185.46236729621887 
+12:32 INFO     top-down:SEC: Iter:   5000,  Train Loss:   2.0,  Train Acc: 90.62%,Val Loss:   6.2,  Val Acc: 53.73%, Val F1: 33.85% Time: 185.46236729621887 
+12:32 INFO     top-down:CONN: Iter:   5000,  Train Loss:   2.0,  Train Acc: 62.50%,Val Loss:   6.2,  Val Acc: 31.53%, Val F1:  9.39% Time: 185.46236729621887 
+12:32 INFO      
+12:32 INFO      
+12:34 INFO     top-down:TOP: Iter:   5100,  Train Loss:   2.1,  Train Acc: 90.62%,Val Loss:   6.1,  Val Acc: 67.54%, Val F1: 60.78% Time: 278.20707178115845 
+12:34 INFO     top-down:SEC: Iter:   5100,  Train Loss:   2.1,  Train Acc: 81.25%,Val Loss:   6.1,  Val Acc: 54.08%, Val F1: 34.94% Time: 278.20707178115845 
+12:34 INFO     top-down:CONN: Iter:   5100,  Train Loss:   2.1,  Train Acc: 53.12%,Val Loss:   6.1,  Val Acc: 31.53%, Val F1:  9.05% Time: 278.20707178115845 
+12:34 INFO      
+12:34 INFO      
+12:35 INFO     top-down:TOP: Iter:   5200,  Train Loss:   2.4,  Train Acc: 85.71%,Val Loss:   6.1,  Val Acc: 68.81%, Val F1: 61.53% Time: 370.35003757476807 
+12:35 INFO     top-down:SEC: Iter:   5200,  Train Loss:   2.4,  Train Acc: 71.43%,Val Loss:   6.1,  Val Acc: 53.99%, Val F1: 33.99% Time: 370.35003757476807 
+12:35 INFO     top-down:CONN: Iter:   5200,  Train Loss:   2.4,  Train Acc: 71.43%,Val Loss:   6.1,  Val Acc: 30.43%, Val F1:  9.33% Time: 370.35003757476807 
+12:35 INFO      
+12:35 INFO      
+12:35 INFO     Train time usage: 370.3512349128723
+12:35 INFO     Epoch [14/15]
+12:37 INFO     top-down:TOP: Iter:   5300,  Train Loss:   2.1,  Train Acc: 93.75%,Val Loss:   6.2,  Val Acc: 69.32%, Val F1: 60.10% Time: 92.71798849105835 
+12:37 INFO     top-down:SEC: Iter:   5300,  Train Loss:   2.1,  Train Acc: 75.00%,Val Loss:   6.2,  Val Acc: 53.05%, Val F1: 33.91% Time: 92.71798849105835 
+12:37 INFO     top-down:CONN: Iter:   5300,  Train Loss:   2.1,  Train Acc: 53.12%,Val Loss:   6.2,  Val Acc: 30.85%, Val F1:  9.46% Time: 92.71798849105835 
+12:37 INFO      
+12:37 INFO      
+12:38 INFO     top-down:TOP: Iter:   5400,  Train Loss:   2.2,  Train Acc: 96.88%,Val Loss:   6.2,  Val Acc: 68.89%, Val F1: 60.16% Time: 185.43823838233948 
+12:38 INFO     top-down:SEC: Iter:   5400,  Train Loss:   2.2,  Train Acc: 84.38%,Val Loss:   6.2,  Val Acc: 53.48%, Val F1: 33.64% Time: 185.43823838233948 
+12:38 INFO     top-down:CONN: Iter:   5400,  Train Loss:   2.2,  Train Acc: 53.12%,Val Loss:   6.2,  Val Acc: 30.68%, Val F1:  9.06% Time: 185.43823838233948 
+12:38 INFO      
+12:38 INFO      
+12:40 INFO     top-down:TOP: Iter:   5500,  Train Loss:   2.0,  Train Acc: 93.75%,Val Loss:   6.1,  Val Acc: 67.46%, Val F1: 60.06% Time: 278.1774206161499 
+12:40 INFO     top-down:SEC: Iter:   5500,  Train Loss:   2.0,  Train Acc: 81.25%,Val Loss:   6.1,  Val Acc: 54.59%, Val F1: 35.22% Time: 278.1774206161499 
+12:40 INFO     top-down:CONN: Iter:   5500,  Train Loss:   2.0,  Train Acc: 56.25%,Val Loss:   6.1,  Val Acc: 31.36%, Val F1:  9.21% Time: 278.1774206161499 
+12:40 INFO      
+12:40 INFO      
+12:41 INFO     top-down:TOP: Iter:   5600,  Train Loss:   2.7,  Train Acc: 100.00%,Val Loss:   6.1,  Val Acc: 68.30%, Val F1: 60.29% Time: 370.3300881385803 
+12:41 INFO     top-down:SEC: Iter:   5600,  Train Loss:   2.7,  Train Acc: 57.14%,Val Loss:   6.1,  Val Acc: 54.33%, Val F1: 34.69% Time: 370.3300881385803 
+12:41 INFO     top-down:CONN: Iter:   5600,  Train Loss:   2.7,  Train Acc: 57.14%,Val Loss:   6.1,  Val Acc: 30.85%, Val F1:  9.66% Time: 370.3300881385803 
+12:41 INFO      
+12:41 INFO      
+12:41 INFO     Train time usage: 370.3312921524048
+12:41 INFO     Epoch [15/15]
+12:43 INFO     top-down:TOP: Iter:   5700,  Train Loss:   2.3,  Train Acc: 96.88%,Val Loss:   6.2,  Val Acc: 68.89%, Val F1: 59.67% Time: 92.73076128959656 
+12:43 INFO     top-down:SEC: Iter:   5700,  Train Loss:   2.3,  Train Acc: 71.88%,Val Loss:   6.2,  Val Acc: 54.25%, Val F1: 34.73% Time: 92.73076128959656 
+12:43 INFO     top-down:CONN: Iter:   5700,  Train Loss:   2.3,  Train Acc: 40.62%,Val Loss:   6.2,  Val Acc: 31.28%, Val F1:  9.60% Time: 92.73076128959656 
+12:43 INFO      
+12:43 INFO      
+12:45 INFO     top-down:TOP: Iter:   5800,  Train Loss:   2.1,  Train Acc: 93.75%,Val Loss:   6.2,  Val Acc: 68.89%, Val F1: 60.13% Time: 185.4730064868927 
+12:45 INFO     top-down:SEC: Iter:   5800,  Train Loss:   2.1,  Train Acc: 90.62%,Val Loss:   6.2,  Val Acc: 54.16%, Val F1: 34.53% Time: 185.4730064868927 
+12:45 INFO     top-down:CONN: Iter:   5800,  Train Loss:   2.1,  Train Acc: 65.62%,Val Loss:   6.2,  Val Acc: 31.19%, Val F1:  9.48% Time: 185.4730064868927 
+12:45 INFO      
+12:45 INFO      
+12:46 INFO     top-down:TOP: Iter:   5900,  Train Loss:   2.2,  Train Acc: 90.62%,Val Loss:   6.1,  Val Acc: 68.64%, Val F1: 60.40% Time: 278.22209644317627 
+12:46 INFO     top-down:SEC: Iter:   5900,  Train Loss:   2.2,  Train Acc: 87.50%,Val Loss:   6.1,  Val Acc: 54.25%, Val F1: 34.19% Time: 278.22209644317627 
+12:46 INFO     top-down:CONN: Iter:   5900,  Train Loss:   2.2,  Train Acc: 53.12%,Val Loss:   6.1,  Val Acc: 31.53%, Val F1:  9.56% Time: 278.22209644317627 
+12:46 INFO      
+12:46 INFO      
+12:48 INFO     top-down:TOP: Iter:   6000,  Train Loss:   2.9,  Train Acc: 85.71%,Val Loss:   6.1,  Val Acc: 68.98%, Val F1: 61.13% Time: 370.12785959243774 
+12:48 INFO     top-down:SEC: Iter:   6000,  Train Loss:   2.9,  Train Acc: 85.71%,Val Loss:   6.1,  Val Acc: 54.42%, Val F1: 34.50% Time: 370.12785959243774 
+12:48 INFO     top-down:CONN: Iter:   6000,  Train Loss:   2.9,  Train Acc: 42.86%,Val Loss:   6.1,  Val Acc: 31.28%, Val F1:  9.38% Time: 370.12785959243774 
+12:48 INFO      
+12:48 INFO      
+12:48 INFO     Train time usage: 370.12909150123596
+12:48 INFO     dev_best_acc_top: 69.32%,  dev_best_f1_top: 62.24%, 
+dev_best_acc_sec: 53.65%,  dev_best_f1_sec: 34.00%, 
+dev_best_acc_conn: 32.21%,  dev_best_f1_conn:  9.02%

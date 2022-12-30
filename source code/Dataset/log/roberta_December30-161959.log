@@ -1,0 +1,216 @@
+16:20 INFO     {'model_name': 'roberta', 'train_path': 'Dataset/data/train.txt', 'dev_path': 'Dataset/data/dev.txt', 'test_path': 'Dataset/data/test.txt', 'i2conn': '', 'conn2i': '', 'i2top': '', 'top2i': '', 'i2sec': '', 'sec2i': '', 'save_path_top': 'Dataset/saved_dict/roberta_top.ckpt', 'save_path_sec': 'Dataset/saved_dict/roberta_sec.ckpt', 'save_path_conn': 'Dataset/saved_dict/roberta_conn.ckpt', 'log': 'Dataset/log/roberta_December30-161959.log', 'device': device(type='cuda', index=0), 'require_improvement': 10000, 'n_top': 4, 'n_sec': 11, 'n_conn': 102, 'pad_size': 100, 'finetune_bert': True, 'num_epochs': 15, 'learning_rate': 1e-05, 'bert': 'roberta', 'batch_size': 32, 'bert_path': './pretrained/roberta-base/', 'hidden_size': 768, 'tokenizer': '', 'lambda1': 1.0, 'lambda2': 1.0, 'lambda3': 1.0, 'lambda4': 1.0, 'x_dim': 768, 'need_clc_loss': True, 'need_conn_rst': True, 'model_choose': 'bert_simple', 'show_time': True, 'num_gcn_layer': 2, 'label_num': 117, 'label_embedding_size': 100, 'attn_hidden_size': 768, 'enc_emb_dim': 384, 'dec_emb_dim': 384, 'enc_hidden_size': 768, 'dec_hidden_size': 768, 'enc_hid_dim': 768, 'dec_hid_dim': 768}
+16:20 INFO     Loading data...
+16:20 INFO     Time usage: 11.17068600654602
+16:20 INFO     Epoch [1/15]
+16:21 INFO     top-down:TOP: Iter:    100,  Train Loss:   7.0,  Train Acc: 56.25%,Test Loss:   7.2,  Test Acc: 53.82%, Test F1: 17.50% Time: 95.73238158226013 *
+16:21 INFO      
+16:21 INFO      
+16:23 INFO     top-down:TOP: Iter:    200,  Train Loss:   6.6,  Train Acc: 43.75%,Test Loss:   6.4,  Test Acc: 53.82%, Test F1: 17.50% Time: 191.69194412231445 *
+16:23 INFO      
+16:23 INFO      
+16:25 INFO     top-down:TOP: Iter:    300,  Train Loss:   5.7,  Train Acc: 53.12%,Test Loss:   5.5,  Test Acc: 61.28%, Test F1: 39.41% Time: 287.7913694381714 *
+16:25 INFO      
+16:25 INFO      
+16:26 INFO     top-down:TOP: Iter:    400,  Train Loss:   6.5,  Train Acc: 14.29%,Test Loss:   5.9,  Test Acc: 50.38%, Test F1: 37.44% Time: 379.31739616394043 
+16:26 INFO      
+16:26 INFO      
+16:26 INFO     Train time usage: 379.31909370422363
+16:26 INFO     Epoch [2/15]
+16:28 INFO     top-down:TOP: Iter:    500,  Train Loss:   5.7,  Train Acc: 59.38%,Test Loss:   5.1,  Test Acc: 67.02%, Test F1: 54.01% Time: 96.36654543876648 *
+16:28 INFO      
+16:28 INFO      
+16:29 INFO     top-down:TOP: Iter:    600,  Train Loss:   4.7,  Train Acc: 84.38%,Test Loss:   4.8,  Test Acc: 70.55%, Test F1: 62.45% Time: 192.88343977928162 *
+16:29 INFO      
+16:29 INFO      
+16:31 INFO     top-down:TOP: Iter:    700,  Train Loss:   4.8,  Train Acc: 62.50%,Test Loss:   4.7,  Test Acc: 69.31%, Test F1: 59.08% Time: 288.9155547618866 *
+16:31 INFO      
+16:31 INFO      
+16:32 INFO     top-down:TOP: Iter:    800,  Train Loss:   5.0,  Train Acc: 71.43%,Test Loss:   5.0,  Test Acc: 64.72%, Test F1: 57.28% Time: 381.01564145088196 
+16:32 INFO      
+16:32 INFO      
+16:32 INFO     Train time usage: 381.0166811943054
+16:32 INFO     Epoch [3/15]
+16:34 INFO     top-down:TOP: Iter:    900,  Train Loss:   4.2,  Train Acc: 68.75%,Test Loss:   4.7,  Test Acc: 70.36%, Test F1: 63.38% Time: 97.35688018798828 *
+16:34 INFO      
+16:34 INFO      
+16:36 INFO     top-down:TOP: Iter:   1000,  Train Loss:   4.1,  Train Acc: 84.38%,Test Loss:   4.6,  Test Acc: 70.08%, Test F1: 63.66% Time: 193.38262462615967 *
+16:36 INFO      
+16:36 INFO      
+16:37 INFO     top-down:TOP: Iter:   1100,  Train Loss:   4.4,  Train Acc: 75.00%,Test Loss:   4.6,  Test Acc: 70.36%, Test F1: 63.03% Time: 286.79327058792114 
+16:37 INFO      
+16:37 INFO      
+16:39 INFO     top-down:TOP: Iter:   1200,  Train Loss:   4.8,  Train Acc: 71.43%,Test Loss:   4.7,  Test Acc: 68.83%, Test F1: 60.59% Time: 379.89222049713135 
+16:39 INFO      
+16:39 INFO      
+16:39 INFO     Train time usage: 379.8932566642761
+16:39 INFO     Epoch [4/15]
+16:40 INFO     top-down:TOP: Iter:   1300,  Train Loss:   3.5,  Train Acc: 87.50%,Test Loss:   4.7,  Test Acc: 71.61%, Test F1: 64.50% Time: 93.85111927986145 
+16:40 INFO      
+16:40 INFO      
+16:42 INFO     top-down:TOP: Iter:   1400,  Train Loss:   3.9,  Train Acc: 84.38%,Test Loss:   4.6,  Test Acc: 71.99%, Test F1: 65.42% Time: 191.05711317062378 *
+16:42 INFO      
+16:42 INFO      
+16:43 INFO     top-down:TOP: Iter:   1500,  Train Loss:   3.6,  Train Acc: 81.25%,Test Loss:   4.7,  Test Acc: 70.84%, Test F1: 65.01% Time: 284.37143325805664 
+16:43 INFO      
+16:43 INFO      
+16:45 INFO     top-down:TOP: Iter:   1600,  Train Loss:   4.5,  Train Acc: 42.86%,Test Loss:   4.7,  Test Acc: 70.27%, Test F1: 61.57% Time: 377.104172706604 
+16:45 INFO      
+16:45 INFO      
+16:45 INFO     Train time usage: 377.10522079467773
+16:45 INFO     Epoch [5/15]
+16:47 INFO     top-down:TOP: Iter:   1700,  Train Loss:   3.2,  Train Acc: 84.38%,Test Loss:   4.7,  Test Acc: 71.51%, Test F1: 65.13% Time: 93.35239696502686 
+16:47 INFO      
+16:47 INFO      
+16:48 INFO     top-down:TOP: Iter:   1800,  Train Loss:   3.3,  Train Acc: 87.50%,Test Loss:   4.6,  Test Acc: 72.18%, Test F1: 66.00% Time: 191.36673283576965 *
+16:48 INFO      
+16:48 INFO      
+16:50 INFO     top-down:TOP: Iter:   1900,  Train Loss:   2.9,  Train Acc: 87.50%,Test Loss:   4.8,  Test Acc: 71.03%, Test F1: 64.30% Time: 284.6039698123932 
+16:50 INFO      
+16:50 INFO      
+16:51 INFO     top-down:TOP: Iter:   2000,  Train Loss:   4.7,  Train Acc: 71.43%,Test Loss:   4.9,  Test Acc: 70.65%, Test F1: 61.54% Time: 376.941330909729 
+16:51 INFO      
+16:51 INFO      
+16:51 INFO     Train time usage: 376.94240045547485
+16:51 INFO     Epoch [6/15]
+16:53 INFO     top-down:TOP: Iter:   2100,  Train Loss:   2.7,  Train Acc: 87.50%,Test Loss:   4.8,  Test Acc: 72.75%, Test F1: 65.24% Time: 92.57804894447327 
+16:53 INFO      
+16:53 INFO      
+16:54 INFO     top-down:TOP: Iter:   2200,  Train Loss:   2.9,  Train Acc: 96.88%,Test Loss:   4.8,  Test Acc: 71.32%, Test F1: 64.92% Time: 185.3794059753418 
+16:54 INFO      
+16:54 INFO      
+16:56 INFO     top-down:TOP: Iter:   2300,  Train Loss:   3.0,  Train Acc: 87.50%,Test Loss:   4.9,  Test Acc: 71.61%, Test F1: 65.10% Time: 282.41223907470703 *
+16:56 INFO      
+16:56 INFO      
+16:58 INFO     top-down:TOP: Iter:   2400,  Train Loss:   3.5,  Train Acc: 100.00%,Test Loss:   5.2,  Test Acc: 70.75%, Test F1: 62.91% Time: 375.1619203090668 
+16:58 INFO      
+16:58 INFO      
+16:58 INFO     Train time usage: 375.1629903316498
+16:58 INFO     Epoch [7/15]
+16:59 INFO     top-down:TOP: Iter:   2500,  Train Loss:   2.5,  Train Acc: 93.75%,Test Loss:   5.1,  Test Acc: 72.08%, Test F1: 64.34% Time: 92.64650559425354 
+16:59 INFO      
+16:59 INFO      
+17:01 INFO     top-down:TOP: Iter:   2600,  Train Loss:   2.6,  Train Acc: 100.00%,Test Loss:   5.0,  Test Acc: 72.47%, Test F1: 66.88% Time: 188.26587843894958 *
+17:01 INFO      
+17:01 INFO      
+17:02 INFO     top-down:TOP: Iter:   2700,  Train Loss:   2.9,  Train Acc: 90.62%,Test Loss:   5.2,  Test Acc: 70.46%, Test F1: 64.05% Time: 281.4528946876526 
+17:02 INFO      
+17:02 INFO      
+17:04 INFO     top-down:TOP: Iter:   2800,  Train Loss:   3.0,  Train Acc: 85.71%,Test Loss:   5.3,  Test Acc: 70.65%, Test F1: 62.45% Time: 373.3821692466736 
+17:04 INFO      
+17:04 INFO      
+17:04 INFO     Train time usage: 373.3832368850708
+17:04 INFO     Epoch [8/15]
+17:05 INFO     top-down:TOP: Iter:   2900,  Train Loss:   2.2,  Train Acc: 96.88%,Test Loss:   5.3,  Test Acc: 72.18%, Test F1: 63.51% Time: 92.92336845397949 
+17:05 INFO      
+17:05 INFO      
+17:07 INFO     top-down:TOP: Iter:   3000,  Train Loss:   2.5,  Train Acc: 93.75%,Test Loss:   5.1,  Test Acc: 71.99%, Test F1: 64.98% Time: 186.146142244339 
+17:07 INFO      
+17:07 INFO      
+17:08 INFO     top-down:TOP: Iter:   3100,  Train Loss:   2.0,  Train Acc: 100.00%,Test Loss:   5.2,  Test Acc: 70.46%, Test F1: 63.41% Time: 279.79273986816406 
+17:08 INFO      
+17:08 INFO      
+17:10 INFO     top-down:TOP: Iter:   3200,  Train Loss:   3.0,  Train Acc: 85.71%,Test Loss:   5.3,  Test Acc: 71.61%, Test F1: 63.97% Time: 373.1554169654846 
+17:10 INFO      
+17:10 INFO      
+17:10 INFO     Train time usage: 373.15648651123047
+17:10 INFO     Epoch [9/15]
+17:12 INFO     top-down:TOP: Iter:   3300,  Train Loss:   2.1,  Train Acc: 100.00%,Test Loss:   5.5,  Test Acc: 70.94%, Test F1: 62.76% Time: 94.09258890151978 
+17:12 INFO      
+17:12 INFO      
+17:13 INFO     top-down:TOP: Iter:   3400,  Train Loss:   2.5,  Train Acc: 90.62%,Test Loss:   5.2,  Test Acc: 72.18%, Test F1: 66.06% Time: 191.72618198394775 *
+17:13 INFO      
+17:13 INFO      
+17:15 INFO     top-down:TOP: Iter:   3500,  Train Loss:   2.2,  Train Acc: 90.62%,Test Loss:   5.3,  Test Acc: 71.51%, Test F1: 64.85% Time: 284.8756904602051 
+17:15 INFO      
+17:15 INFO      
+17:16 INFO     top-down:TOP: Iter:   3600,  Train Loss:   2.5,  Train Acc: 85.71%,Test Loss:   5.4,  Test Acc: 71.13%, Test F1: 63.74% Time: 377.55156779289246 
+17:16 INFO      
+17:16 INFO      
+17:16 INFO     Train time usage: 377.5526065826416
+17:16 INFO     Epoch [10/15]
+17:18 INFO     top-down:TOP: Iter:   3700,  Train Loss:   2.0,  Train Acc: 96.88%,Test Loss:   5.6,  Test Acc: 71.99%, Test F1: 64.21% Time: 93.31183576583862 
+17:18 INFO      
+17:18 INFO      
+17:19 INFO     top-down:TOP: Iter:   3800,  Train Loss:   2.4,  Train Acc: 96.88%,Test Loss:   5.3,  Test Acc: 72.18%, Test F1: 65.16% Time: 186.60717058181763 
+17:19 INFO      
+17:19 INFO      
+17:21 INFO     top-down:TOP: Iter:   3900,  Train Loss:   2.5,  Train Acc: 96.88%,Test Loss:   5.3,  Test Acc: 71.22%, Test F1: 64.97% Time: 279.9632623195648 
+17:21 INFO      
+17:21 INFO      
+17:23 INFO     top-down:TOP: Iter:   4000,  Train Loss:   2.6,  Train Acc: 85.71%,Test Loss:   5.3,  Test Acc: 71.61%, Test F1: 64.85% Time: 372.66277146339417 
+17:23 INFO      
+17:23 INFO      
+17:23 INFO     Train time usage: 372.6638140678406
+17:23 INFO     Epoch [11/15]
+17:24 INFO     top-down:TOP: Iter:   4100,  Train Loss:   1.8,  Train Acc: 100.00%,Test Loss:   5.5,  Test Acc: 72.18%, Test F1: 64.93% Time: 93.33286333084106 
+17:24 INFO      
+17:24 INFO      
+17:26 INFO     top-down:TOP: Iter:   4200,  Train Loss:   2.3,  Train Acc: 100.00%,Test Loss:   5.5,  Test Acc: 71.80%, Test F1: 65.12% Time: 186.65615153312683 
+17:26 INFO      
+17:26 INFO      
+17:27 INFO     top-down:TOP: Iter:   4300,  Train Loss:   2.1,  Train Acc: 96.88%,Test Loss:   5.4,  Test Acc: 71.03%, Test F1: 65.11% Time: 280.0002951622009 
+17:27 INFO      
+17:27 INFO      
+17:29 INFO     top-down:TOP: Iter:   4400,  Train Loss:   2.6,  Train Acc: 100.00%,Test Loss:   5.4,  Test Acc: 71.99%, Test F1: 65.24% Time: 372.76788878440857 
+17:29 INFO      
+17:29 INFO      
+17:29 INFO     Train time usage: 372.7689390182495
+17:29 INFO     Epoch [12/15]
+17:30 INFO     top-down:TOP: Iter:   4500,  Train Loss:   1.7,  Train Acc: 100.00%,Test Loss:   5.6,  Test Acc: 72.18%, Test F1: 64.50% Time: 93.55669832229614 
+17:30 INFO      
+17:30 INFO      
+17:32 INFO     top-down:TOP: Iter:   4600,  Train Loss:   2.2,  Train Acc: 96.88%,Test Loss:   5.5,  Test Acc: 72.37%, Test F1: 65.74% Time: 187.17427682876587 
+17:32 INFO      
+17:32 INFO      
+17:33 INFO     top-down:TOP: Iter:   4700,  Train Loss:   2.1,  Train Acc: 90.62%,Test Loss:   5.5,  Test Acc: 71.32%, Test F1: 65.20% Time: 280.7919874191284 
+17:33 INFO      
+17:33 INFO      
+17:35 INFO     top-down:TOP: Iter:   4800,  Train Loss:   2.6,  Train Acc: 85.71%,Test Loss:   5.4,  Test Acc: 72.08%, Test F1: 65.18% Time: 376.75874519348145 *
+17:35 INFO      
+17:35 INFO      
+17:35 INFO     Train time usage: 376.7603762149811
+17:35 INFO     Epoch [13/15]
+17:37 INFO     top-down:TOP: Iter:   4900,  Train Loss:   1.8,  Train Acc: 100.00%,Test Loss:   5.6,  Test Acc: 73.04%, Test F1: 65.68% Time: 93.46017742156982 
+17:37 INFO      
+17:37 INFO      
+17:38 INFO     top-down:TOP: Iter:   5000,  Train Loss:   2.2,  Train Acc: 96.88%,Test Loss:   5.6,  Test Acc: 72.08%, Test F1: 65.59% Time: 186.93248057365417 
+17:38 INFO      
+17:38 INFO      
+17:40 INFO     top-down:TOP: Iter:   5100,  Train Loss:   2.4,  Train Acc: 93.75%,Test Loss:   5.5,  Test Acc: 70.94%, Test F1: 65.16% Time: 280.49663162231445 
+17:40 INFO      
+17:40 INFO      
+17:41 INFO     top-down:TOP: Iter:   5200,  Train Loss:   2.5,  Train Acc: 100.00%,Test Loss:   5.5,  Test Acc: 71.89%, Test F1: 65.33% Time: 377.00173568725586 *
+17:41 INFO      
+17:41 INFO      
+17:41 INFO     Train time usage: 377.0032546520233
+17:41 INFO     Epoch [14/15]
+17:43 INFO     top-down:TOP: Iter:   5300,  Train Loss:   1.8,  Train Acc: 100.00%,Test Loss:   5.6,  Test Acc: 72.66%, Test F1: 65.58% Time: 93.4793713092804 
+17:43 INFO      
+17:43 INFO      
+17:44 INFO     top-down:TOP: Iter:   5400,  Train Loss:   2.1,  Train Acc: 96.88%,Test Loss:   5.6,  Test Acc: 71.70%, Test F1: 65.11% Time: 186.99044132232666 
+17:44 INFO      
+17:44 INFO      
+17:46 INFO     top-down:TOP: Iter:   5500,  Train Loss:   2.1,  Train Acc: 93.75%,Test Loss:   5.5,  Test Acc: 71.13%, Test F1: 65.20% Time: 280.5883901119232 
+17:46 INFO      
+17:46 INFO      
+17:48 INFO     top-down:TOP: Iter:   5600,  Train Loss:   2.4,  Train Acc: 85.71%,Test Loss:   5.5,  Test Acc: 71.41%, Test F1: 64.93% Time: 373.5206775665283 
+17:48 INFO      
+17:48 INFO      
+17:48 INFO     Train time usage: 373.52238178253174
+17:48 INFO     Epoch [15/15]
+17:49 INFO     top-down:TOP: Iter:   5700,  Train Loss:   1.8,  Train Acc: 100.00%,Test Loss:   5.6,  Test Acc: 72.66%, Test F1: 65.63% Time: 93.57000589370728 
+17:49 INFO      
+17:49 INFO      
+17:51 INFO     top-down:TOP: Iter:   5800,  Train Loss:   2.1,  Train Acc: 100.00%,Test Loss:   5.6,  Test Acc: 72.08%, Test F1: 64.97% Time: 187.14175820350647 
+17:51 INFO      
+17:51 INFO      
+17:52 INFO     top-down:TOP: Iter:   5900,  Train Loss:   1.8,  Train Acc: 100.00%,Test Loss:   5.5,  Test Acc: 71.89%, Test F1: 64.84% Time: 280.7213215827942 
+17:52 INFO      
+17:52 INFO      
+17:54 INFO     top-down:TOP: Iter:   6000,  Train Loss:   2.3,  Train Acc: 85.71%,Test Loss:   5.5,  Test Acc: 71.51%, Test F1: 64.44% Time: 373.69693660736084 
+17:54 INFO      
+17:54 INFO      
+17:54 INFO     Train time usage: 373.6979842185974
+17:54 INFO     Test_best_acc_top: 71.89%,  Test_best_f1_top: 65.33%, 
+Test_best_acc_sec: 60.99%,  Test_best_f1_sec: 41.89%, 
+Test_best_acc_conn: 39.67%,  Test_best_f1_conn: 13.21%
